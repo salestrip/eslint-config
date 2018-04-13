@@ -3,10 +3,12 @@
   "description": "SalesTrip ESLint configuration",
   "homepage": "https://bitbucket.org/salestrip/eslint-config-salestrip#readme",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "SalesTrip Limited",
-  "contributors": ["Sid Wood <sid@salestrip.com>"],
+  "contributors": [
+    "Sid Wood <sid@salestrip.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/salestrip/eslint-config-salestrip.git"
