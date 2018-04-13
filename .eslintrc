@@ -1,0 +1,3 @@
+{
+  "extends": "@salestrip/eslint-config-salestrip"
+}
