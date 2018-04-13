@@ -4,7 +4,7 @@ SalesTrip ESLint configuration.
 
 ## Installation
 
-    npm install --save-dev eslint eslint-config-salestrip
+    npm install --save-dev eslint @salestrip/eslint-config-salestrip
 
 ## Usage
 
