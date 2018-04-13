@@ -12,7 +12,7 @@ Create the following `.eslintrc` file in your project root.
 
 ```json
 {
-  "extends": "salestrip",
+  "extends": "@salestrip/eslint-config-salestrip",
   "root": true
 }
 ```
