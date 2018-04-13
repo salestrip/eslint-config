@@ -1,0 +1,30 @@
+{
+  "name": "@salestrip/eslint-config-salestrip",
+  "description": "SalesTrip ESLint configuration",
+  "homepage": "https://bitbucket.org/salestrip/eslint-config-salestrip#readme",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "SalesTrip Limited",
+  "contributors": ["Sid Wood <sid@salestrip.com>"],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/salestrip/eslint-config-salestrip.git"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.19.0"
+  }
+}
