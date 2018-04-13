@@ -5,13 +5,13 @@ module.exports = {
     es6: true
   },
   'extends': [
-    'salestrip/rules/best-practices',
-    'salestrip/rules/ecmascript-6',
-    'salestrip/rules/nodejs-commonjs',
-    'salestrip/rules/possible-errors',
-    'salestrip/rules/strict-mode',
-    'salestrip/rules/stylistic-issues',
-    'salestrip/rules/variables'
+    '@salestrip/eslint-config-salestrip/rules/best-practices',
+    '@salestrip/eslint-config-salestrip/rules/ecmascript-6',
+    '@salestrip/eslint-config-salestrip/rules/nodejs-commonjs',
+    '@salestrip/eslint-config-salestrip/rules/possible-errors',
+    '@salestrip/eslint-config-salestrip/rules/strict-mode',
+    '@salestrip/eslint-config-salestrip/rules/stylistic-issues',
+    '@salestrip/eslint-config-salestrip/rules/variables'
   ],
   'globals': {
     context: true,
