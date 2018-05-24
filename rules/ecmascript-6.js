@@ -22,18 +22,7 @@ module.exports = {
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
-    'prefer-destructuring': ['error', {
-      VariableDeclarator: {
-        array: true,
-        object: true
-      },
-      AssignmentExpression: {
-        array: true,
-        object: false
-      }
-    }, {
-      enforceForRenamedProperties: true
-    }],
+    'prefer-destructuring': 'off',
     'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
