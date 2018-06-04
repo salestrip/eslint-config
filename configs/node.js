@@ -5,7 +5,7 @@ module.exports = {
     node: true
   },
   'extends': [
-    '@salestrip/eslint-config-salestrip/configs/core'
+    '@salestrip/eslint-config/configs/core'
   ],
   'globals': {},
   'parserOptions': {},

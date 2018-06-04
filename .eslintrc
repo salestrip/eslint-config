@@ -1,3 +1,4 @@
 {
-  "extends": "@salestrip/eslint-config-salestrip"
+  "extends": "@salestrip",
+  "root": true
 }
