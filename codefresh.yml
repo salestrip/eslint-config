@@ -21,12 +21,6 @@ steps:
     commands:
       - npm run lint
 
-  test:
-    title: Run test suite
-    image: node:10-alpine
-    commands:
-      - npm test
-
   publish:
     title: Publish to registry
     image: node:10-alpine
