@@ -1,5 +1,7 @@
 # @salestrip/eslint-config
 
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=salestrip&repoName=eslint-config&branch=master&pipelineName=main&accountName=sidwood&type=cf-1)]( https://g.codefresh.io/repositories/salestrip/eslint-config/builds?filter=trigger:build;branch:master;service:5b20de9941eb3c0c00c0942c~main)
+
 If you'd like to add or change an eslint rule open a PR and use gh-polls to solicit team voting: https://app.gh-polls.com/.
 
 ## Installation
