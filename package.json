@@ -14,7 +14,7 @@
     "url": "git@github.com:salestrip/eslint-config.git"
   },
   "scripts": {
-    "lint": "eslint --max-warnings 0 ."
+    "lint": "eslint -c ./index.js --max-warnings 0 ."
   },
   "keywords": [
     "eslint",
