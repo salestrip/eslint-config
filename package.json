@@ -7,11 +7,14 @@
   "main": "index.js",
   "author": "SalesTrip Limited",
   "contributors": [
-    "Sid Wood <sid@salestrip.com>"
+    "Sid Wood <sidwood@me.com>"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com:salestrip/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salestrip/eslint-config/issues"
   },
   "scripts": {
     "lint": "eslint -c ./index.js --max-warnings 0 ."
@@ -23,9 +26,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.19.0"
+    "eslint": "^5.11.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.0"
+    "eslint": "^5.11.0"
   }
 }
