@@ -1,6 +1,6 @@
 # @salestrip/eslint-config
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=salestrip&repoName=eslint-config&branch=master&pipelineName=main&accountName=sidwood&type=cf-1)]( https://g.codefresh.io/repositories/salestrip/eslint-config/builds?filter=trigger:build;branch:master;service:5b20de9941eb3c0c00c0942c~main)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/salestrip/salestrip%2Feslint-config%2Fmain?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWIxOGIyMWNlMjZmNGMwMDAxZTE5MDY1.oEsGHB32WQHF0m7CSbmuJY3eUH5HAx0sxVI6TBF3gsk&type=cf-1)]( https://g.codefresh.io/pipelines/main/builds?repoOwner=salestrip&repoName=eslint-config&serviceName=salestrip%2Feslint-config&filter=trigger:build~Build;branch:master;pipeline:5b20de9941eb3c0c00c0942c~main)
 
 If you'd like to add or change an eslint rule open a PR and use gh-polls to solicit team voting: https://app.gh-polls.com/.
 
