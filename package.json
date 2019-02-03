@@ -26,9 +26,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.11.0"
+    "eslint": "^5.13.0",
+    "eslint-plugin-jest": "^22.2.2"
   },
   "peerDependencies": {
-    "eslint": "^5.11.0"
+    "eslint": "^5.13.0",
+    "eslint-plugin-jest": "^22.2.2"
   }
 }
