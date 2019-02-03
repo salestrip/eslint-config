@@ -1,13 +1,25 @@
 #!/usr/bin/env sh
 
-prettier-eslint \
-  --write \
-  '{lib,test}/**/*.js'
-eslint \
-  --no-eslintrc \
-  --quiet \
-  --fix \
-  --env node,es6 \
-  --parser-options ecmaVersion:2019 \
-  --rule 'brace-style:[2,stroustrup],indent:[2, 2,{SwitchCase:1}]' \
-  '{lib,test}/**/*.js'
+#
+# Run code formatter
+#
+
+format() {
+  prettier-eslint \
+    --write \
+    $@
+  eslint \
+    --no-eslintrc \
+    --quiet \
+    --fix \
+    --env node,es6 \
+    --parser-options ecmaVersion:2019 \
+    --rule 'brace-style:[2,stroustrup],indent:[2, 2,{SwitchCase:1}]' \
+    $@
+}
+
+if [ $# -eq 0 ]; then
+  format '{lib,test}/**/*.js';
+else
+  format $1;
+fi

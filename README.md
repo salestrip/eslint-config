@@ -36,12 +36,11 @@ Then create a `test/.eslintrc` file with the following content.
 }
 ```
 
-This module exposes two binaries `format` and `lint`. Use them to trigger code formatting and static code analysis. Add the following npm tasks to your `package.json`.
+This module exposes a `format` binary that executes prettier code formatting followed by an eslint 'stroustrup' brace style correction. Add the following npm task to your `package.json`.
 
 ```json
 "scripts": {
-  "format": "format",
-  "lint": "lint"
+  "format": "format '{lib,test}/**/*.js'"
 }
 ```
 
