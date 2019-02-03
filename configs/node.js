@@ -4,10 +4,7 @@ module.exports = {
   'env': {
     node: true
   },
-  'extends': [
-    './configs/core.js',
-    './configs/prettier.js'
-  ],
+  'extends': ['./configs/core.js'],
   'globals': {},
   'parserOptions': {},
   'plugins': [],
