@@ -9,7 +9,7 @@ module.exports = {
     'jest/no-disabled-tests': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-kooks': 'off',
-    'jest/no-identical-title': 'warn',
+    'jest/no-identical-title': 'off',
     'jest/no-jasmine-globals': 'error',
     'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': ['error', {maxSize: 100}],
