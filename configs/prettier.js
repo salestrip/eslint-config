@@ -5,10 +5,8 @@ module.exports = {
   'extends': [],
   'globals': {},
   'parserOptions': {},
-  'plugins': [
-    'prettier'
-  ],
+  'plugins': ['prettier'],
   'rules': {
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'error'
   }
 }
