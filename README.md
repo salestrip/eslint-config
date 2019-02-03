@@ -4,13 +4,20 @@
 
 If you'd like to add or change an eslint rule open a PR and use gh-polls to solicit team voting: https://app.gh-polls.com/.
 
-## Installation
+## Install
+
+Install peer dependencies along with the module.
 
 ```bash
-npm install --save-dev eslint @salestrip/eslint-config
+npm i -D eslint
+npm i -D eslint-plugin-jest
+npm i -D eslint-plugin-prettier
+npm i -D prettier
+npm i -D prettier-eslint-cli
+npm i -D @salestrip/eslint-config
 ```
 
-## Usage
+## Use
 
 Create the following `.eslintrc` file in your project root.
 
@@ -21,7 +28,16 @@ Create the following `.eslintrc` file in your project root.
 }
 ```
 
-## Linting
+This module exposes two binaries `format` and `lint`. Use them to trigger code formatting and static code analysis. Add the following npm tasks to your `package.json`.
+
+```json
+"scripts": {
+  "format": "format",
+  "lint": "lint"
+}
+```
+
+## Lint
 
 This project lints itself.
 
@@ -31,7 +47,7 @@ npm link @salestrip/eslint-config
 npm run lint
 ```
 
-## Releasing
+## Release
 
 To release a new version, use npm. Using `npm version` will update the version in `package.json` before committing the resulting file change to git and adding the appropriate git tag. Pushing a tagged version to `origin` will trigger a CI deployment to the npm registry.
 

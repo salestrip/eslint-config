@@ -9,6 +9,10 @@
   "contributors": [
     "Sid Wood <sidwood@me.com>"
   ],
+  "bin": {
+    "format": "./bin/format.sh",
+    "lint": "./bin/lint.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:salestrip/eslint-config.git"
@@ -29,12 +33,14 @@
     "eslint": "^5.13.0",
     "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.3"
+    "prettier": "^1.16.3",
+    "prettier-eslint-cli": "^4.7.1"
   },
   "peerDependencies": {
     "eslint": "^5.13.0",
     "eslint-plugin-jest": "^22.2.2",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.3"
+    "prettier": "^1.16.3",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
