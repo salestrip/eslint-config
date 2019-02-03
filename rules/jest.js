@@ -15,7 +15,7 @@ module.exports = {
     'jest/no-large-snapshots': ['error', {maxSize: 100}],
     'jest/no-test-callback': 'error',
     'jest/no-test-prefixes': 'error',
-    'jest/no-test-return-statement': 'warn',
+    'jest/no-test-return-statement': 'off',
     'jest/no-truthy-falsy': 'error',
     'jest/prefer-expect-assertions': 'off',
     'jest/prefer-spy-on': 'error',
