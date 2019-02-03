@@ -28,6 +28,14 @@ Create the following `.eslintrc` file in your project root.
 }
 ```
 
+Then create a `test/.eslintrc` file with the following content.
+
+```json
+{
+  "extends": "@salestrip/eslint-config/configs/jest"
+}
+```
+
 This module exposes two binaries `format` and `lint`. Use them to trigger code formatting and static code analysis. Add the following npm tasks to your `package.json`.
 
 ```json
