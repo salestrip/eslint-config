@@ -10,8 +10,7 @@
     "Sid Wood <sidwood@me.com>"
   ],
   "bin": {
-    "format": "./bin/format.sh",
-    "lint": "./bin/lint.sh"
+    "format": "./bin/format.sh"
   },
   "repository": {
     "type": "git",
