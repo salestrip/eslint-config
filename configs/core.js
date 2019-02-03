@@ -13,10 +13,7 @@ module.exports = {
     '../rules/stylistic-issues.js',
     '../rules/variables.js'
   ],
-  'globals': {
-    context: true,
-    given: true
-  },
+  'globals': {},
   'parserOptions': {
     ecmaVersion: 2019
   },
