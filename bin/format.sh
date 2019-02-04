@@ -7,7 +7,7 @@
 format() {
   prettier-eslint \
     --write \
-    $@
+    $*
   eslint \
     --no-eslintrc \
     --quiet \
@@ -15,11 +15,11 @@ format() {
     --env node,es6 \
     --parser-options ecmaVersion:2019 \
     --rule 'brace-style:[2,stroustrup],indent:[2, 2,{SwitchCase:1}]' \
-    $@
+    $*
 }
 
 if [ $# -eq 0 ]; then
   format '{lib,test}/**/*.js';
 else
-  format $1;
+  format $*;
 fi
