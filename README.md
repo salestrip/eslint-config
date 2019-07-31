@@ -1,19 +1,12 @@
 # @salestrip/eslint-config
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/salestrip/salestrip%2Feslint-config%2Fmain?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWIxOGIyMWNlMjZmNGMwMDAxZTE5MDY1.oEsGHB32WQHF0m7CSbmuJY3eUH5HAx0sxVI6TBF3gsk&type=cf-1)]( https://g.codefresh.io/pipelines/main/builds?repoOwner=salestrip&repoName=eslint-config&serviceName=salestrip%2Feslint-config&filter=trigger:build~Build;branch:master;pipeline:5b20de9941eb3c0c00c0942c~main)
-
 If you'd like to add or change an eslint rule open a PR and use gh-polls to solicit team voting: https://app.gh-polls.com/.
 
 ## Install
 
-Install peer dependencies along with the module.
+Install as a development dependency.
 
 ```bash
-npm i -D eslint
-npm i -D eslint-plugin-jest
-npm i -D eslint-plugin-prettier
-npm i -D prettier
-npm i -D prettier-eslint-cli
 npm i -D @salestrip/eslint-config
 ```
 
@@ -36,7 +29,7 @@ Then create a `test/.eslintrc` file with the following content.
 }
 ```
 
-This module exposes a `format` binary that executes prettier code formatting followed by an eslint 'stroustrup' brace style correction. Add the following npm task to your `package.json`.
+This module provides a `format` binary that executes prettier code formatting followed by an eslint 'stroustrup' brace style and property quote corrections to align with eslint config. Add the following npm task to your `package.json`.
 
 ```json
 "scripts": {
