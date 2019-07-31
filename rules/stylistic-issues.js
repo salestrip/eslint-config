@@ -96,7 +96,7 @@ module.exports = {
     'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': 'off',
-    'quote-props': ['error', 'consistent-as-needed', {keywords: true}],
+    'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single', 'avoid-escape'],
     'require-jsdoc': 'off',
     'semi': ['error', 'never'],
