@@ -4,18 +4,18 @@
 const MAX_NESTED_CALLBACKS = 5
 
 module.exports = {
-  'env': {
+  env: {
     'jest': true,
     'jest/globals': true
   },
-  'extends': ['../rules/jest.js'],
-  'globals': {
+  extends: ['../rules/jest.js'],
+  globals: {
     context: true,
     given: true
   },
-  'parserOptions': {},
-  'plugins': ['jest'],
-  'rules': {
+  parserOptions: {},
+  plugins: ['jest'],
+  rules: {
     'arrow-body-style': 'off',
     'complexity': 'off',
     'id-length': 'off',

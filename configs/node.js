@@ -1,12 +1,12 @@
 'use strict'
 
 module.exports = {
-  'env': {
+  env: {
     node: true
   },
-  'extends': ['./configs/core.js'],
-  'globals': {},
-  'parserOptions': {},
-  'plugins': [],
-  'rules': {}
+  extends: ['./configs/core.js'],
+  globals: {},
+  parserOptions: {},
+  plugins: [],
+  rules: {}
 }

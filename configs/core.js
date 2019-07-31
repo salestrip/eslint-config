@@ -1,10 +1,10 @@
 'use strict'
 
 module.exports = {
-  'env': {
+  env: {
     es6: true
   },
-  'extends': [
+  extends: [
     '../rules/best-practices.js',
     '../rules/ecmascript-6.js',
     '../rules/nodejs-commonjs.js',
@@ -13,9 +13,9 @@ module.exports = {
     '../rules/stylistic-issues.js',
     '../rules/variables.js'
   ],
-  'globals': {},
-  'parserOptions': {
+  globals: {},
+  parserOptions: {
     ecmaVersion: 2019
   },
-  'rules': {}
+  rules: {}
 }
