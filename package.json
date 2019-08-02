@@ -27,12 +27,19 @@
     "eslint-config",
     "eslintconfig"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-plugin-jest": "^22.14.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2",
     "prettier-eslint-cli": "^5.0.0"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-jest": "^22.14.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }

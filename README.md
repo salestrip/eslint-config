@@ -1,12 +1,19 @@
 # @salestrip/eslint-config
 
+[![Build Status](https://drone.stdo.io/api/badges/salestrip/eslint-config/status.svg)](https://drone.stdo.io/salestrip/eslint-config)
+
 If you'd like to add or change an eslint rule open a PR and use gh-polls to solicit team voting: https://app.gh-polls.com/.
 
 ## Install
 
-Install as a development dependency.
+Install peer dependencies along with the module.
 
 ```bash
+npm i -D eslint
+npm i -D eslint-plugin-jest
+npm i -D eslint-plugin-prettier
+npm i -D prettier
+npm i -D prettier-eslint-cli
 npm i -D @salestrip/eslint-config
 ```
 
