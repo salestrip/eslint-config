@@ -1,0 +1,38 @@
+---
+
+kind: pipeline
+name: default
+
+clone:
+  disable: true
+
+steps:
+  - name: Clone code repository
+    image: docker:git
+    commands:
+      - git clone --depth=1 --branch=$DRONE_COMMIT_BRANCH $DRONE_GIT_HTTP_URL
+      - git checkout $DRONE_COMMIT
+
+  - name: Install dependencies
+    image: node:12-alpine
+    pull: always
+    commands:
+      - npm ci
+
+  - name: Audit dependencies
+    image: node:12-alpine
+    commands:
+      - npm audit --audit-level=high
+
+  - name: Static code analysis
+    image: node:12-alpine
+    commands:
+      - npm run lint
+
+  - name: Publish to registry
+    image: node:12-alpine
+    commands:
+      - npm publish
+    when:
+      refs:
+        - refs/tags/v*
