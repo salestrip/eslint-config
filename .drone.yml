@@ -10,7 +10,6 @@ steps:
   - name: Clone code repository
     image: docker:git
     commands:
-      - echo $PWD
       - git clone --depth=1 --branch=$DRONE_COMMIT_BRANCH $DRONE_GIT_HTTP_URL .
       - git checkout $DRONE_COMMIT
 
@@ -35,5 +34,5 @@ steps:
     commands:
       - npm publish
     when:
-      refs:
-        - refs/tags/v*
+      event:
+        - tag
