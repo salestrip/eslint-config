@@ -10,7 +10,8 @@ steps:
   - name: Clone code repository
     image: docker:git
     commands:
-      - git clone --depth=1 --branch=$DRONE_COMMIT_BRANCH $DRONE_GIT_HTTP_URL
+      - echo $PWD
+      - git clone --depth=1 --branch=$DRONE_COMMIT_BRANCH $DRONE_GIT_HTTP_URL .
       - git checkout $DRONE_COMMIT
 
   - name: Install dependencies
