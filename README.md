@@ -8,7 +8,7 @@ If you'd like to add or change an eslint rule open a PR and use gh-polls to soli
 
 Install peer dependencies along with the module.
 
-```bash
+```text
 npm i -D eslint
 npm i -D eslint-plugin-jest
 npm i -D eslint-plugin-prettier
@@ -46,21 +46,19 @@ This module provides a `format` binary that executes prettier code formatting fo
 
 ## Lint
 
-This project lints itself.
+A pre-lint script symlinks the project to itself so you can dog food the config settings while a post-lint script removes the symlinks. Note that this would remove any existing global symlink so you would need to run `npm link` again to restore it.
 
-```bash
-npm link
-npm link @salestrip/eslint-config
+```text
 npm run lint
 ```
 
 ## Release
 
-To release a new version, use npm. Using `npm version` will update the version in `package.json` before committing the resulting file change to git and adding the appropriate git tag. Pushing a tagged version to `origin` will trigger a CI deployment to the npm registry.
+To release a new version, use npm. Using `npm version` will update the version in `package.json` before committing the resulting file change to git and adding the appropriate git tag. Pushing a tagged version to `origin` will publish to the npm registry.
 
 To release a **bugfix** update the **patch version**.
 
-```bash
+```text
 npm version patch
 git push
 git push --tags
@@ -68,7 +66,7 @@ git push --tags
 
 To release a **feature** update the **minor version**.
 
-```bash
+```text
 npm version minor
 git push
 git push --tags
@@ -76,7 +74,7 @@ git push --tags
 
 To release a **breaking change** update the **major version**.
 
-```bash
+```text
 npm version major
 git push
 git push --tags

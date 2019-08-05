@@ -1,0 +1,4 @@
+{
+  "extends": "@salestrip",
+  "root": true
+}
