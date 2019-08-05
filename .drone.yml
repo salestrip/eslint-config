@@ -16,7 +16,11 @@ steps:
   - name: Install dependencies
     image: node:12-alpine
     pull: always
+    environment:
+      NPM_TOKEN:
+        from_secret: NPM_TOKEN
     commands:
+      - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       - npm ci
 
   - name: Audit dependencies
