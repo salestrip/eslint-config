@@ -25,7 +25,7 @@ module.exports = {
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-inline-snapshots': 'off',
-    'jest/require-tothrow-message': 'error',
+    'jest/require-to-throw-message': 'error',
     'jest/valid-describe': 'error',
     'jest/valid-expect-in-promise': 'error',
     'jest/valid-expect': 'error',
