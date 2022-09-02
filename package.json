@@ -3,7 +3,7 @@
   "description": "SalesTrip ESLint configuration",
   "homepage": "https://github.com/salestrip/eslint-config#readme",
   "license": "MIT",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": "index.js",
   "author": "SalesTrip Limited",
   "contributors": [
